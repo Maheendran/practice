@@ -5,6 +5,7 @@ import Navbar from '@/components/navbar/Navbar'
 // import { Chart } from "react-google-charts";
 // import Tree from 'react-d3-tree';
 // import 'react-tree-graph/dist/style.css'
+import Link from 'next/link'
 const data={
 	name: 'Colour',
 
@@ -61,7 +62,14 @@ const page = () => {
       <Navbar/>
 
       <p className='text-[3rem] font-bold text-center'>Finance</p>
-      <p className='text-[1rem] font-bold text-center ms-auto'>Table</p>
+	  <div className='w-full flex'>
+
+		<Link className='text-[1rem] w-fit px-4 font-bold text-end ms-auto' href={'/table'}>
+		<p >Table</p>
+
+		</Link>
+
+	  </div>
         <div id="treeWrapper" className='w-fit  border mx-auto'>
         <Tree
    
