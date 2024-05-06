@@ -2,12 +2,13 @@
 import React from 'react'
 import { Tree } from 'react-tree-graph';
 import Navbar from '@/components/navbar/Navbar'
-import { Chart } from "react-google-charts";
+// import { Chart } from "react-google-charts";
 // import Tree from 'react-d3-tree';
-import 'react-tree-graph/dist/style.css'
+// import 'react-tree-graph/dist/style.css'
 const data={
 	name: 'Colour',
-	pathProps: {},
+
+
 	textProps: {x: -25, y: 25},
 	children: [{
 		name: 'Black',
