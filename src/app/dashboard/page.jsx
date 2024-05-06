@@ -61,13 +61,7 @@ const page = () => {
       <Navbar/>
 
       <p className='text-[3rem] font-bold text-center'>Finance</p>
-      {/* <Chart
-      chartType="WordTree"
-      width="100%"
-      height="400px"
-      data={data}
-      options={options}
-    /> */}
+   
         <div id="treeWrapper" className='w-fit  border mx-auto'>
         <Tree
    
