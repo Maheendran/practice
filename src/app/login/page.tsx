@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import axios from 'axios'
 import Cookies from 'js-cookie';
 import Link from "next/link"
+import logo from "../../../public/logo.png";
 const page = () => {
     
   const router=useRouter()
@@ -87,7 +88,6 @@ const page = () => {
      }
   };
 
-  const handleSubmit = () => {};
 
   return (
     <div className="w-full h-screen flex flex-col lg:flex-row overflow-hidden bg-white">
@@ -96,29 +96,26 @@ const page = () => {
         <div className="absolute w-[100%]  top-0 right-0 h-[100%]">
           <Image
             priority={true}
-            className="w-[100%] hidden lg:flex h-[100%]"
+            className="w-[100%]  lg:flex h-[100%]"
             src={image2}
             alt=""
           />
-          <Image
-            priority={true}
-            className="w-[100%]  lg:hidden h-[100%]"
-            src={image2}
-            alt=""
-          />
+      
         </div>
 
         <div className="w-[100%] flex flex-col p-[20px] sm:p-[40px] justify-between ">
-          <div className=" flex lg:flex-col justify-end relative items-center w-[100%] h-[70%]">
-            <div className="flex  w-[100%]  h-[100%] absolute  left-0 top-0 md:top-[20%] lg:top-0   lg:w-auto flex-col  z-[1]">
-              <div className="welcomeTextColorChange welcome   flex text-white text-opacity-25 text-[40px] lg:text-[52px]  xl:text-[59px] font-semibold font-['Poppins']">
-                Welcome
-              </div>
-              <div className="tagTextColorChange whitespace-nowrap flex text-white overflow-hidden text-xs sm:text-xs md:text-sm lg:text-[19px] xl:text-[26px] w-[100%] md:w-[100%] xl:w-[90%] font-medium font-['Poppins']">
-                to Employee Performance Management Tool
-              </div>
+          <div className=" flex lg:flex-col justify-end relative items-center w-[100%] h-[100%]">
+            <div className="flex  w-[100%]  h-[100%] absolute 
+             left-0 top-0  bottom-0 right-0 m-auto">
+           <Image
+            priority={true}
+            className="w-[70%]   z-10 h-[70%]"
+            src={logo}
+            alt=""
+          />
             </div>
           </div>
+            
         </div>
       </div>
 

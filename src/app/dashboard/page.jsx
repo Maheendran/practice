@@ -57,11 +57,11 @@ const data={
 const page = () => {
   
   return (
-    <div className='w-full h-screen bg-red-300'>
+    <div className='w-full h-screen bg-white text-black'>
       <Navbar/>
 
       <p className='text-[3rem] font-bold text-center'>Finance</p>
-   
+      <p className='text-[1rem] font-bold text-center ms-auto'>Table</p>
         <div id="treeWrapper" className='w-fit  border mx-auto'>
         <Tree
    
